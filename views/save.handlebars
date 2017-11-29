@@ -14,7 +14,8 @@
 
 	<body>  
 
-	<!--Nav bar-->
+
+<!--Nav bar-->
 	<nav class="navbar navbar-default">
   		<div class="container-fluid">
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -70,6 +71,39 @@
 
 
 
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Notes for Articles<span id="articleID"></span></h4>
+	      </div>
+	      <div class="modal-body">
+	        <div id="notes"></div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+		
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script>
+$(document).on("click", "#modalbutton", function() {
+  $("#notes").empty();
+  v//Make an ajax get request
+});
+$(document).on("click", "#savenote", function() {
+  //make an Ajax Post request
+});
+$(document).on("click", "#deletenote", function() {
+	//Make an AJax get request
+});
+</script>
 
 
 
